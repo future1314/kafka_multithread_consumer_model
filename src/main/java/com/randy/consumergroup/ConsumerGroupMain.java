@@ -10,7 +10,7 @@ import com.randy.ProducerThread;
 public class ConsumerGroupMain {
 
     public static void main(String[] args){
-        String brokers = "Server2:9092";
+        String brokers = "localhost:9092";
         String groupId = "group01";
         String topic = "HelloWorld";
         int consumerNumber = 3;
@@ -19,6 +19,6 @@ public class ConsumerGroupMain {
         producerThread.start();
 
         ConsumerGroup consumerGroup = new ConsumerGroup(brokers,groupId,topic,consumerNumber);
-        consumerGroup.start();
+        consumerGroup.start();// KafkaConsumer is not safe for multi-threaded access ?
     }
 }

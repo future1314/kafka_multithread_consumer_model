@@ -46,7 +46,7 @@ public class ProducerThread implements Runnable {
                     if(e != null){
                         e.printStackTrace();
                     }
-                    System.out.println("Producer Message: Partition:"+recordMetadata.partition()+",Offset:"+recordMetadata.offset());
+                    System.out.println("Producer Message: Partition:"+recordMetadata.partition()+",Offset:"+recordMetadata.offset()+",sendMsg::"+sendMsg);
                 }
             });
             // thread sleep 3 seconds every time

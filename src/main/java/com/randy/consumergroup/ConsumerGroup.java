@@ -22,12 +22,12 @@ public class ConsumerGroup {
         this.consumerNumber = consumerNumber;
         for(int i = 0; i< consumerNumber;i++){
             ConsumerThread consumerThread = new ConsumerThread(brokers,groupId,topic);
-            consumerThreadList.add(consumerThread);
+            consumerThreadList.add(consumerThread);//
         }
     }
 
     public void start(){
-        for (ConsumerThread item : consumerThreadList){
+        for (ConsumerThread item : consumerThreadList){///KafkaConsumer is not safe for multi-threaded access ??
             Thread thread = new Thread(item);
             thread.start();
         }

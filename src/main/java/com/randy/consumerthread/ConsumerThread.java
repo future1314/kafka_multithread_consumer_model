@@ -35,9 +35,9 @@ public class ConsumerThread {
         executor = new ThreadPoolExecutor(threadNumber,threadNumber,0L, TimeUnit.MILLISECONDS,
                 new ArrayBlockingQueue<Runnable>(1000), new ThreadPoolExecutor.CallerRunsPolicy());
         while (true){
-            ConsumerRecords<String,String> consumerRecords = consumer.poll(100);
+            ConsumerRecords<String,String> consumerRecords = consumer.poll(100);///
             for (ConsumerRecord<String,String> item : consumerRecords){
-                executor.submit(new ConsumerThreadHandler(item));
+                executor.submit(new ConsumerThreadHandler(item));///
             }
         }
     }

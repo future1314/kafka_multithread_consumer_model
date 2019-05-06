@@ -10,7 +10,7 @@ import com.randy.ProducerThread;
 public class ConsumerThreadMain {
 
     public static void main(String[] args){
-        String brokers = "Server2:9092";
+        String brokers = "127.0.0.1:9092";
         String groupId = "group01";
         String topic = "HelloWorld";
         int consumerNumber = 3;
