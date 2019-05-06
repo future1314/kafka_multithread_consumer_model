@@ -1,4 +1,4 @@
-package com.randy.consumergroup;
+package com.ddl.consumergroup;
 
 import java.util.ArrayList;
 import java.util.List;

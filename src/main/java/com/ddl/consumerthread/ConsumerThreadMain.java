@@ -1,6 +1,6 @@
-package com.randy.consumerthread;
+package com.ddl.consumerthread;
 
-import com.randy.ProducerThread;
+import com.ddl.ProducerThread;
 
 /**
  * Author  : RandySun (sunfeng152157@sina.com)

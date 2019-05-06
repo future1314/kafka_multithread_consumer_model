@@ -1,4 +1,4 @@
-package com.randy.consumerthread;
+package com.ddl.consumerthread;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 

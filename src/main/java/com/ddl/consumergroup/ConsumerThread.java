@@ -1,4 +1,4 @@
-package com.randy.consumergroup;
+package com.ddl.consumergroup;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
